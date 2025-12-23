@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav>
+        <h2 class="logo">Portfolio</h2>
+        <ul>
+            <li><a onclick="showSection('home')">Home</a></li>
+            <li><a onclick="showSection('about')">About</a></li>
+            <li><a onclick="showSection('skills')">Skills</a></li>
+            <li><a onclick="showSection('projects')">Projects</a></li>
+            <li><a onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HOME ===== -->
+    <section id="home" class="section active">
+        <div class="home-content">
+            <div class="home-text">
+                <h3>Hello, It's Me</h3>
+                <h1>Rakshitha S</h1>
+         
+                 <h3>And Im a <span id="typing-text"></span></h3>
+                <p>
+                     I'm Rakshitha S, a passionate fullstack developer and student, exploring the world of web development and building projects that solve real-world problems. 
+                     Let's turn ideas into reality, one line of code at a time.I'm always learning and growing, and I'm excited to collaborate and create innovative solutions.
+                </p>
+                <button onclick="showSection('about')">More About Me</button>
+            </div>
+
+            <div class="profile">
+                <div class="image-circle"></div>
+                <img src="image/Rakshitha.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about-section">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-container">
+
+        <!-- LEFT SIDE -->
+        <div class="about-left">
+            <p class="about-intro">
+                I’m a passionate <span>Full-Stack Web Developer</span> who loves
+                building modern, scalable, and user-friendly web applications.
+            </p>
+
+            <div class="about-stack">
+                <h3>Tech Stack</h3>
+                <p>
+                    <strong>Frontend:</strong> HTML, CSS, JavaScript, React <br>
+                    <strong>Backend:</strong> Node.js, Express <br>
+                    <strong>Database:</strong> MySQL / MongoDB <br>
+                    <strong>Tools:</strong> Git, GitHub
+                </p>
+            </div>
+
+            <a href="image/Rakshitha_CV.pdf" class="about-btn">View My Resume</a>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="about-right">
+
+            <div class="role-card">🌐 Frontend Developer</div>
+            <div class="role-card">⚙ Backend Developer</div>
+            <div class="role-card">🧠 ML Enthusiast</div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- ===== SKILLS ===== -->
+   <section id="skills" class="section">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML</span>
+        </div>
+
+        <div class="skill">
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>CSS</span>
+        </div>
+
+        <div class="skill">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+        </div>
+
+        <div class="skill">
+            <i class="fa-brands fa-python"></i>
+            <span>Python Programming</span>
+        </div>
+        <div class="skill">
+            <i class="fa-brands fa-python"></i>
+            <span>Java Programming</span>
+        </div>
+
+        <div class="skill">
+            <i class="fa-solid fa-brain"></i>
+            <span>Machine Learning</span>
+        </div>
+        <div class="skill">
+            <i class="fa-solid fa-brain"></i>
+            <span>Artificial Intelligence</span>
+        </div>
+        <div class="skill">
+            <span>node.js</span>
+        </div>
+        <div class="skill">
+           
+            <span>MySql</span>
+        </div>
+        <div class="skill">
+           
+            <span>Team Leadership</span>
+        </div>
+        <div class="skill">
+            
+            <span>effective Communication</span>
+        </div>
+        <div class="skill">
+           
+            <span>Adobe Photoshop</span>
+        </div>
+    </div>
+</section>
+
+    <!-- ===== PROJECTS ===== -->
+<section id="projects" class="section">
+    <div class="projects-header">
+        <h1>Recent Projects</h1>
+        <p>
+            Below you can see some examples of my recent work.
+            Click view project to explore more.
+        </p>
+    </div>
+
+    <div class="projects-container">
+
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <img src="image/authentications.jpeg" alt="Project Image">
+            <h3>Employee Registration & Authentication System</h3>
+            <p>
+                Developed a secure authentication system using machine learning.
+            </p>
+            <div class="project-links">
+                <a href="#" target="_blank">View Project</a>
+                <a href="https://github.com/Rakshithascs/Employee_Registration_authenticationSystem.git" target="_blank">GitHub</a>
+                
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <img src="image/portoflio_image.JPG" alt="Project Image">
+            <h3>Portfolio Website</h3>
+            <p>
+                Responsive personal portfolio website built using HTML, CSS and JavaScript.
+            </p>
+            <div class="project-links">
+                <a href="#" target="_blank">View Project</a>
+                <a href="#" target="_blank">GitHub</a>
+                <!-- <a href="#" target="_blank">LinkedIn</a> -->
+            </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+            <img src="image/house.jpeg" alt="Project Image">
+            <h3>Bengaluru House Price Prediction</h3>
+            <p>
+                Machine learning Project using regression algorithm to predict the price.
+            </p>
+            <div class="project-links">
+                <a href="#" target="_blank">View Project</a>
+                <a href="https://github.com/Rakshithascs/Rakshitha.S_Projects.git" target="_blank">GitHub</a>
+                <!-- <a href="#" target="_blank">LinkedIn</a> -->
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+    <div class="contact-container">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-left">
+            <h2>Get in Touch</h2>
+            <p>
+                I'd love to hear from you!  
+                If you have any questions, ideas, or just want to say hello,
+                feel free to send a message.
+            </p>
+
+            <p class="contact-email">📧 rakshithasgowda658@gmail.com</p>
+        </div>
+
+        <!-- RIGHT SIDE FORM -->
+        <div class="contact-right">
+            <form id="contactForm">
+
+                <div class="form-row">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+
+                <input type="email" placeholder="Email" required>
+
+                <textarea placeholder="Message" required></textarea>
+
+                <button type="submit">Send</button>
+
+                <!-- SUCCESS MESSAGE -->
+                <p id="success-msg">✔ Your message has been sent successfully!</p>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>
